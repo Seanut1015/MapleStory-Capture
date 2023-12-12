@@ -90,6 +90,7 @@ class MyWindow(QtWidgets.QWidget, Ui_Form):
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     Form = MyWindow()
+    Form.setWindowTitle("MSCapture")
     video = threading.Thread(target=Form.opencv)
     video.start()
     Form.show()
