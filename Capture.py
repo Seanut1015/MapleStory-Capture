@@ -34,8 +34,8 @@ class MyWindow(QtWidgets.QWidget, Ui_Form):
         self.myqimagew.fill(qRgb(255, 255, 255))
 
     def ui(self):
-        self.label = QtWidgets.QLabel(self)
-        self.label.setGeometry(0, 50, 260, 260)
+        self.label1 = QtWidgets.QLabel(self)
+        self.label1.setGeometry(0, 50, 260, 260)
 
     def closeEvent(self):
         self.ocv = False
@@ -72,9 +72,9 @@ class MyWindow(QtWidgets.QWidget, Ui_Form):
             bytesPerline = channel * width
             if (frame[10][259] == [238, 238, 238]).all():
                 qimg = QImage(frame, width, height, bytesPerline, QImage.Format_RGB888)
-                self.label.setPixmap(QPixmap.fromImage(qimg))
+                self.label1.setPixmap(QPixmap.fromImage(qimg))
             else:
-                self.label.setPixmap(QPixmap.fromImage(self.myqimage))
+                self.label1.setPixmap(QPixmap.fromImage(self.myqimage))
 
     def choose_path(self):
         global path
