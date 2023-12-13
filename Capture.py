@@ -65,7 +65,7 @@ class MyWindow(QtWidgets.QWidget, Ui_Form):
                 name = time.strftime("%Y%m%d-%H-%M-%S", time.localtime())
                 name = path + "/" + str(name) + ".png"
                 cv2.imwrite(name, RGB_f)
-                self.label.setPixmap(QPixmap.fromImage(self.myqimagew))
+                self.label1.setPixmap(QPixmap.fromImage(self.myqimagew))
                 continue
             frame = frame[:261]
             height, width, channel = frame.shape
