@@ -4,7 +4,6 @@ from PyQt5 import QtWidgets
 from PyQt5.QtGui import *
 from PIL import ImageGrab
 from UI import Ui_Form
-from os import path
 import configparser
 import numpy as np
 import threading
@@ -64,7 +63,8 @@ class MyWindow(QtWidgets.QWidget, Ui_Form):
                 RGB_f = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 name = time.strftime("%Y%m%d-%H-%M-%S", time.localtime())
                 name = path + "/" + str(name) + ".png"
-                cv2.imwrite(name, RGB_f)
+                # cv2.imwrite(name, RGB_f)
+                cv2.imencode(".png", RGB_f)[1].tofile(name)
                 self.label1.setPixmap(QPixmap.fromImage(self.myqimagew))
                 continue
             frame = frame[:261]
