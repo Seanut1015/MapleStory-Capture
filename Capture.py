@@ -40,8 +40,10 @@ class MyWindow(QtWidgets.QWidget, Ui_Form):
         self.ocv = False
 
     def opencv(self):
+        MS_hwnd1 = win32gui.FindWindow(None, "MapleStory")
+        MS_hwnd2 = win32gui.FindWindowEx(None, MS_hwnd1, None, "MapleStory")
+        MS_hwnd = MS_hwnd1 if MS_hwnd2 == 0 else MS_hwnd2
         while self.ocv:
-            MS_hwnd = win32gui.FindWindow(None, "MapleStory")
             fig = win32gui.GetWindowRect(MS_hwnd)
             CursorPos = GetCursorPos()
             fig = (CursorPos[0], fig[1] + 32, CursorPos[0] + 260, fig[3] - 8)
