@@ -2,7 +2,7 @@
 capture equipment from MapleStory
 楓之谷裝備截圖
 
-#Latest Releases
+# Latest Releases
 https://github.com/Seanut1015/MapleStory-Capture/releases/latest
 
 # 更改截圖快捷鍵方式:
