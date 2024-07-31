@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7576a6a2-abd0-4670-a2fa-c4a557d637be)# MapleStory-Capture
+# MapleStory-Capture
 capture equipment from MapleStory
 楓之谷裝備截圖
 
