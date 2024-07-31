@@ -1,4 +1,4 @@
-# MapleStory-Capture
+![image](https://github.com/user-attachments/assets/7576a6a2-abd0-4670-a2fa-c4a557d637be)# MapleStory-Capture
 capture equipment from MapleStory
 楓之谷裝備截圖
 
@@ -10,6 +10,12 @@ https://github.com/Seanut1015/MapleStory-Capture/releases/latest
 
 # 使用說明
 config.ini與Captue.exe務必放置於同資料夾中
+1. 於GitHub下載ZIP並解壓縮
+2. 取出其中dist資料夾(其他可以刪掉 不影響使用)
+3. 執行Capture.exe
+4. 選擇圖片儲存位置
+5. 滑鼠移到楓之谷中的裝備上並按鍵盤"c鍵"(預設 可更改)
+   
 ### 裝備窗請靠左
 
 # 巴哈詳細說明
