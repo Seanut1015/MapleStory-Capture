@@ -11,3 +11,6 @@ https://github.com/Seanut1015/MapleStory-Capture/releases/latest
 # 使用說明
 config.ini與Captue.exe務必放置於同資料夾中
 ### 裝備窗請靠左
+
+# 巴哈詳細說明
+[巴哈姆特詳細圖文說明](https://forum.gamer.com.tw/C.php?bsn=7650&snA=1027572)
