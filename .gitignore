@@ -1,0 +1,27 @@
+# 編譯產生的檔案
+*.o
+*.obj
+*.exe
+*.dll
+*.out
+*.class
+*.pyc
+*.pyo
+
+# 其他臨時檔案
+*.log
+*.tmp
+*.bak
+*.bat
+*.spec
+
+# VSCode 相關
+.vscode/
+
+# Python 虛擬環境
+.venv/
+
+build/
+dist/
+_old/
+_old.*
